@@ -43,14 +43,14 @@ int main() {
     printf("Enter the word to search: ");
     scanf("%s", searchWord);
 
-    file = fopen(filename, "r");                                                // if file not exist
+    file = fopen(filename, "r");                                                
     if (file == NULL) {
         printf("Error opening the file '%s'\n", filename);
         return 1;
     }
 
-    printf("Searching for the word '%s' in file '%s'\n", searchWord, filename); // if file exist
-    searchWordInFile(file, searchWord);                                         // go to function
+    printf("Searching for the word '%s' in file '%s'\n", searchWord, filename); 
+    searchWordInFile(file, searchWord);                                        
 
     fclose(file);
 
